@@ -1,13 +1,38 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.yang.foodsearch.fragment.SearchFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <com.yang.foodsearch.view.TextViewPlus
+            android:id="@+id/tv_search_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="city"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:customFont="@string/font_bold"/>
+
+        <ImageView
+                android:id="@+id/iv_search_city"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/icon_locate"/>
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.yang.foodsearch.view.MeiTuanListView
+            android:id="@+id/search_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.yang.foodsearch.view.MeiTuanListView>
+
+    </LinearLayout>
+
+</layout>
