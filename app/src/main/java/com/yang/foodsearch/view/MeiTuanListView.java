@@ -64,6 +64,7 @@ public class MeiTuanListView extends ListView implements AbsListView.OnScrollLis
 		init(context);
 	}
 
+
 	public interface OnMeiTuanRefreshListener{
 		void onRefresh();
 	}

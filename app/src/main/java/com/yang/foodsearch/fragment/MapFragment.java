@@ -248,8 +248,6 @@ public class MapFragment extends Fragment{
                 baiduMap.clear();
 
                 for(PoiInfo poi:pois){
-                    //Log.d("TAG", "poi£∫"+poi.name+" / "+poi.address+"/ "+poi.phoneNum);
-                    //Ω´√ø“ª∏ˆpoiµƒŒª÷√∂º◊˜Œ™“ª∏ˆ∏≤∏«ŒÔÃÌº”µΩµÿÕº…œ
                     MarkerOptions option = new MarkerOptions();
                     option.position(poi.location);
                     option.icon(BitmapDescriptorFactory.fromResource(R.mipmap.icon_locate));

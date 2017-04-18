@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RadioGroup;
 
@@ -109,6 +110,8 @@ public class MainActivity extends AppCompatActivity implements HomeContract.MvpV
         });
     }
 
+
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -120,7 +123,6 @@ public class MainActivity extends AppCompatActivity implements HomeContract.MvpV
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.tool_bar_menu, menu);
 
         return super.onCreateOptionsMenu(menu);
     }
